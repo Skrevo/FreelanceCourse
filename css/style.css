@@ -5,6 +5,10 @@ body {
     font-weight: 700;
 }
 
+a,a:visited{
+    text-decoration: none;
+}
+
 .navbar {
     display: flex;
     width: 1230px;
