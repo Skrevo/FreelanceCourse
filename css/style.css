@@ -69,7 +69,7 @@ a,a:visited{
     letter-spacing: 0.5px;
 }
 
-/* Next Step */
+/* Midle part */
 
 .midlepart {
     display: flex;
@@ -84,7 +84,6 @@ a,a:visited{
     letter-spacing: 1px;
     line-height: 83px;
     color: #1E212C;
-    /* margin: 24px 0 0 344px; */
     width: 496px;
 }
 
@@ -122,7 +121,6 @@ a,a:visited{
     font-size: 14px;
     line-height: 150%;
     color: #1E212C;
-    /* justify-content: center; */
 }
 
 .circle {
@@ -227,4 +225,192 @@ a,a:visited{
     left: 1668px;
     top: 3.04%;
     bottom: 86.78%;
+}
+
+/* About */
+
+.about {
+    display: flex;
+    width: 1920px;
+    height: 560px;
+    margin: 180px 0 0 0;
+}
+
+.about_img {
+    width: 705px;
+    margin: 0 0 0 345px;
+}
+
+.about_container {
+    margin: 0 0 0 135px;
+}
+
+h6 {
+    line-height: 150%;
+    color: #1E212C;
+    text-transform: uppercase;
+    margin: 0 0 8px 0;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 46px;
+    line-height: 130%;
+    font-weight: 900;
+    color: #1E212C;
+}
+
+.about_container_body {
+    margin: 40px 0 0 0;
+    width: 390px;
+}
+
+.about_container_body li {
+    font-weight: 400;
+    line-height: 160%;
+    color: #424551;
+    margin: 6px 0;
+    background: url(/image/vectror/check.svg) left 5px no-repeat;
+    padding: 0 0 0 32px;
+}
+
+.about_button button {
+    font-size: 14px;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    line-height: 44px;
+    margin-top: 48px;
+    width: 160px;
+    height: 44px;
+    padding: 0 32px;
+    background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+    border-radius: 4px;
+}
+
+#dots2 {
+    position: absolute;
+    width: 181.18px;
+    height: 132.74px;
+    left: -50.79px;
+    top: 1320px;
+}
+
+#circles2 {
+    position: absolute;
+    width: 287px;
+    height: 287px;
+    left: 1798px;
+    top: 1517px;
+}
+
+/* Courses */
+
+.courses {
+    margin: 180px 0 0 345px;
+    width: 1240px;
+}
+
+.courses_heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 60px;
+}
+
+.courses_heading_button button {
+    border: 1px solid #FF3F3A;
+    align-items: center;
+    padding: 0px 40px;
+    width: 202px;
+    height: 52px;
+    border-radius: 4px;
+    color: #FF3F3A;
+    line-height: 52px;
+    letter-spacing: 0.5px;
+    background-color: #ffffff;
+}
+
+.courses_body {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+
+.courses_card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+    width: 590px;
+    background: #FFFFFF;
+    border: 1px solid #E5E8ED;
+
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    border-radius: 4px;
+}
+
+.card_info {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+    width: 322px;
+}
+
+.card_info_name {
+    font-size: 20px;
+    line-height: 150%;
+    color: #1E212C;
+}
+
+.card_info_price {
+    font-size: 18px;
+    line-height: 150%;
+    color: #FF4242;
+}
+
+.card_info_price span {
+    font-weight: 400;
+    color: #787A80;
+}
+
+.card_info_direct {
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 400;
+    color: #FFFFFF;
+    padding: 1px 8px;
+    border-radius: 4px;
+    max-width: 112px;
+}
+
+#marketing {
+    background-color: #03CEA4;
+}
+
+#managment {
+    background-color: #5A87FC;
+}
+
+#hr {
+    background-color: #F89828;
+}
+
+#design {
+    background-color: #F52F6E;
+}
+
+/* Benefits */
+
+.benefits {
+    width: 1230px;
+    margin: 180px 0 0 345px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.benefits_heading h6 {
+    text-align: center;
 }
