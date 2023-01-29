@@ -498,13 +498,79 @@ h2 {
 .events_list_item {
     height: 126px;
     background-color: #ffffff;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition-duration: 0.5s;
 }
 
+.events_list_item:hover{
+    box-shadow: 0px 80px 80px -20px rgba(255, 63, 58, 0.16), 0px 30px 24px -10px rgba(255, 63, 58, 0.1), 0px 12px 10px -6px rgba(255, 63, 58, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+}
 
+.events_list_item button {
+    padding: 0 32px;
+    border-radius: 4px;
+    border: 1px solid #F75E05;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+    line-height: 44px;
+    color: #FF3F3A;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition-duration: 0.5s;
+}
 
+.events_list_item button:hover {
+    background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+    cursor: auto;
+    color: #FFFFFF;
+}
 
+.events_list_item_info {
+    width: 758px;
+}
 
+.events_list_item_info p:first-child {
+    font-size: 20px;
+    line-height: 150%;
+    color: #1E212C;
+}
 
+.events_list_item_info p:last-child {
+    font-weight: 400;
+    line-height: 160%;
+    color: #787A80;
+    margin-top: 4px;
+}
+
+.events_list_item_date {
+    display: flex;
+    align-items: center;
+}
+
+.events_list_item_date1 {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 130%;
+    letter-spacing: 1px;
+    color: #FF3F3A;
+    margin-right: 20px;
+}
+
+.events_list_item_date_time p:first-child {
+    font-size: 20px;
+    line-height: 150%;
+    color: #1E212C;
+}
+
+.events_list_item_date_time p:last-child {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #787A80;
+}
 
 .events_viewall {
     display: flex;
@@ -526,4 +592,30 @@ h3 {
     color: #FFFFFF;
     line-height: 52px;
     letter-spacing: 0.5px;
+}
+
+/* Certificate */
+
+.certificate {
+    width: 1230px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 343px;
+}
+
+.certificate_info {
+    width: 400px;
+}
+
+.certificate_info_text {
+    margin: 48px 0 32px 0;
+    font-weight: 400;
+    line-height: 160%;
+    color: #424551;
+}
+
+.certificate_info_logos {
+    display: flex;
+    justify-content: space-between;
 }
