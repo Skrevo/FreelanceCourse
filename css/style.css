@@ -1,18 +1,15 @@
 body {
     font-family: "Lato", sans-serif;
-    width: 1920px;
+    /* min-width: 1250px; */
     font-size: 16px;
     font-weight: 700;
 }
 
-a,a:visited{
-    text-decoration: none;
-}
-
 .navbar {
     display: flex;
-    width: 1230px;
-    margin: 20px 0 0 0;
+    max-width: 1250px;
+    margin: 0px auto;
+    padding: 0 5px;
     height: 52px;
     align-items: center;
 }
@@ -29,7 +26,6 @@ a,a:visited{
 .menu li {
     list-style: none;
     color: #424551;
-
 }
 
 .cta {
@@ -58,6 +54,8 @@ a,a:visited{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 #navbarButton {
@@ -73,7 +71,7 @@ a,a:visited{
 
 .midlepart {
     display: flex;
-    width: 1230px;
+    /* width: 1280px; */
     justify-content: space-between;
 }
 
@@ -231,18 +229,37 @@ a,a:visited{
 
 .about {
     display: flex;
-    width: 1920px;
+    max-width: 1250px;
     height: 560px;
-    margin: 180px 0 0 0;
-}
-
-.about_img {
-    width: 705px;
-    margin: 0 0 0 345px;
+    margin: 180px auto;
+    padding: 0 15px;
 }
 
 .about_container {
-    margin: 0 0 0 135px;
+    margin: 0 0 0 10%;
+}
+
+.about_img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width:1200px) {
+    .about {
+        max-width: 970px;
+    }
+}
+
+@media (max-width:992px) {
+    .about {
+        max-width: 750px;
+    }
+}
+
+@media (max-width:767px) {
+    .about {
+        max-width: none;
+    }
 }
 
 h6 {
@@ -262,7 +279,6 @@ h1 {
 
 .about_container_body {
     margin: 40px 0 0 0;
-    width: 390px;
 }
 
 .about_container_body li {
@@ -303,11 +319,20 @@ h1 {
     top: 1517px;
 }
 
+@media (max-width:1200px) {
+    #dots2 {
+        display: none;
+    }
+
+    #circles2 {
+        display: none;
+    }
+}
 /* Courses */
 
 .courses {
-    margin: 180px 0 0 345px;
-    width: 1240px;
+    margin: 180px auto 0 auto;
+    max-width: 1250px;
 }
 
 .courses_heading {
