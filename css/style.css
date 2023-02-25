@@ -14,6 +14,10 @@ body {
     align-items: center;
 }
 
+.logo {
+    min-width: 131px;
+}
+
 .menu {
     margin: 0 0 0 60px;
     display: flex;
@@ -33,6 +37,45 @@ body {
     margin-left: 225px;
     width: 386px;
     align-items: center;
+}
+
+@media (max-width: 1252px) {
+    .cta {
+    margin-left: 10%;
+    }
+    .menu {
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .cta {
+        margin-left: 2%;
+    }
+    .menu {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 928px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        max-width: 1250px;
+        min-height: 200px;
+        margin: 0 auto;
+        padding: 0 5px;
+        justify-content: center;
+    }
+    .logo {
+        margin: 10px 0;
+    }
+    .cta {
+        margin: 10px 0;
+    }
+    .menu {
+        margin: 10px 0;
+    }
 }
 
 .account {
@@ -75,6 +118,19 @@ body {
     justify-content: space-between;
 }
 
+.enjoy {
+    width: 100%;
+}
+
+.study_img {
+    width: 100%;
+}
+
+@media (max-width: 700px) {
+    .study_img {
+        display: none;
+    }
+}
 
 .header__text {
     font-size: 64px;
@@ -124,7 +180,6 @@ body {
 .circle {
     width: 84px;
     height: 84px;
-    background-color: rgba(255, 63, 58, 0.12);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -139,15 +194,39 @@ body {
     height: 52px;
     border-radius: 50%;
     background-color: #FF3F3A;
+    animation-name: orange_circle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes orange_circle {
+    0% {
+        width: 52px;
+        height: 52px;
+    }
+    100% {
+        width: 84px;
+        height: 84px;
+        background-color: rgba(255, 63, 58, 0.12);;
+    }
 }
 /* Statistics */
 
 .statistics {
-    width: 1230px;
+    max-width: 1230px;
     display: flex;
     gap: 66px;
     justify-content: space-between;
     align-items: center;
+}
+
+@media (max-width: 992px) {
+    .statistics {
+        flex-direction: column;
+        align-items: center;
+        gap: 22px;
+    }
+    
 }
 
 .statistics_item {
@@ -260,6 +339,9 @@ body {
     .about {
         max-width: none;
     }
+    .about_img img {
+        display: none;
+    }
 }
 
 h6 {
@@ -332,6 +414,7 @@ h1 {
 
 .courses {
     margin: 180px auto 0 auto;
+    padding: auto;
     max-width: 1250px;
 }
 
@@ -358,6 +441,7 @@ h1 {
 .courses_body {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .courses_card {
@@ -365,7 +449,7 @@ h1 {
     justify-content: space-between;
     align-items: center;
     margin: 15px;
-    width: 590px;
+    max-width: 590px;
     background: #FFFFFF;
     border: 1px solid #E5E8ED;
 
